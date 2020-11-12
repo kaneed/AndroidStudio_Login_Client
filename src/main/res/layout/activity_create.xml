@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
+    tools:context=".CreateUserActivity">
+
+    <EditText
+        android:id="@+id/etEmail"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:hint="@string/email_address"
+        android:autofillHints="@string/email_address"
+        android:layout_marginTop="150dp"
+        android:textColor="@color/White"
+        android:textColorHint="@color/LightGrey"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textEmailAddress"
+        tools:layout_editor_absoluteX="101dp"
+        tools:layout_editor_absoluteY="126dp" />
+
+    <EditText
+        android:id="@+id/etPassword"
+        app:layout_constraintTop_toBottomOf="@id/etEmail"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:hint="@string/password"
+        android:autofillHints="@string/password"
+        android:textColor="@color/White"
+        android:textColorHint="@color/LightGrey"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPassword"
+        tools:layout_editor_absoluteX="101dp"
+        tools:layout_editor_absoluteY="202dp" />
+
+    <Button
+        android:id="@+id/btnOk"
+        app:layout_constraintTop_toBottomOf="@id/etPassword"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/create_account"
+        tools:layout_editor_absoluteX="173dp"
+        tools:layout_editor_absoluteY="536dp" />
+
+    <Button
+        android:id="@+id/btnCancel"
+        app:layout_constraintTop_toBottomOf="@id/btnOk"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/cancel"
+        tools:layout_editor_absoluteX="173dp"
+        tools:layout_editor_absoluteY="536dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
